@@ -11,184 +11,20 @@
 </head>
 
 <body class="bg-gray-50">
-  <header class="bg-white">
-    <nav class="mx-auto max-w-screen-2xl px-2 lg:px-20 flex items-center justify-between p-4 gap-6" aria-label="Global">
-      <div class="flex lg:flex-initial">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Evosoft</span>
-          <img class="h-8 w-auto" src="images/evosoft_blue.svg" alt="">
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Mở</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-8">
-        <div class="relative">
-          <button type="button" class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
-            aria-expanded="false" id="primary-item-menu">
-            Máy tính
-            <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
-
-          <!--
-          'Product' flyout menu, show/hide based on flyout menu state.
-
-          Entering: "transition ease-out duration-200"
-            From: "opacity-0 translate-y-1"
-            To: "opacity-100 translate-y-0"
-          Leaving: "transition ease-in duration-150"
-            From: "opacity-100 translate-y-0"
-            To: "opacity-0 translate-y-1"
-        -->
-          <div
-            class="absolute hidden top-full z-10 mt-3 w-screen max-w-3xl overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-gray-900/5"
-            id="expanded-item-menu">
-            <div class="grid grid-cols-3 p-4">
-              <div class="col-span-1">
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Laptop
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Máy tính
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Thiết bị văn phòng
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-span-1">
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Laptop
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Máy tính
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Thiết bị văn phòng
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-span-1">
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Laptop
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Máy tính
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="group relative flex items-center gap-x-6 rounded-md p-2 text-base leading-6 hover:bg-gray-50">
-                  <div>
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Thiết bị văn phòng
-                      <span class="absolute inset-0"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="text-base font-semibold leading-6 text-gray-900">Laptop</a>
-        <a href="#" class="text-base font-semibold leading-6 text-gray-900">Thiết bị văn phòng</a>
-        <a href="#" class="text-base font-semibold leading-6 text-gray-900">Tin tức</a>
-        <a href="#" class="text-base font-semibold leading-6 text-gray-900">Khuyến mãi</a>
-      </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-        <!-- Search -->
-        <div class="flex lg:ml-6">
-          <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
-            <span class="sr-only">Search</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-            </svg>
-          </a>
-        </div>
-
-        <!-- Cart -->
-        <div class="ml-4 flow-root lg:ml-6">
-          <a href="#" class="group -m-2 flex items-center p-2">
-            <svg class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
-            <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-            <span class="sr-only">items in cart, view bag</span>
-          </a>
-        </div>
-      </div>
-    </nav>
+  <div class="bg-white">
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="hidden lg:hidden" role="dialog" aria-modal="true" id="open-mobile-menu">
+    <div class="mobile-menu hidden lg:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-10"></div>
       <div
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Evosoft</span>
-            <img class="h-8 w-auto" src="images/evosoft_blue.svg" alt="">
+            <span class="sr-only">Your Company</span>
+            <img class="h-6 w-auto" src="images/evosoft_blue.svg" alt="">
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="mobile-menu">
-            <span class="sr-only">Đóng</span>
+          <button type="button" class="mobile-menu-button-close -m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
               aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -200,9 +36,9 @@
             <div class="space-y-2 py-6">
               <div class="-mx-3">
                 <button type="button"
-                  class="flex w-full items-center justify-between rounded-md py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  class="mobile-menu-button flex w-full items-center justify-between rounded-md py-1 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   aria-controls="disclosure-1" aria-expanded="false">
-                  Sản phẩm
+                  Máy tính
                   <!--
                   Expand/collapse icon, toggle classes based on menu open state.
 
@@ -215,40 +51,286 @@
                   </svg>
                 </button>
                 <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                <div class="mt-2 space-y-2" id="disclosure-1">
+                <div class="mobile-menu-expand hidden mt-2 transition ease-in-out duration-200" id="disclosure-1">
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Analytics</a>
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Engagement</a>
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Security</a>
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Integrations</a>
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Integrations</a>
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Automations</a>
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Automations</a>
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Watch
                     demo</a>
                   <a href="#"
-                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact
+                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Contact
+                    sales</a>
+                </div>
+              </div>
+              <div class="-mx-3">
+                <button type="button"
+                  class="mobile-menu-button flex w-full items-center justify-between rounded-md py-1 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  aria-controls="disclosure-1" aria-expanded="false">
+                  Laptop
+                  <!--
+                                              Expand/collapse icon, toggle classes based on menu open state.
+                            
+                                              Open: "rotate-180", Closed: ""
+                                            -->
+                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                <div class="mobile-menu-expand hidden mt-2 transition ease-in-out duration-200" id="disclosure-1">
+                  <a href="#"
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Analytics</a>
+                  <a href="#"
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Engagement</a>
+                  <a href="#"
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Security</a>
+                  <a href="#"
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Integrations</a>
+                  <a href="#"
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Automations</a>
+                  <a href="#"
+                    class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Watch
+                    demo</a>
+                  <a href="#"
+                    class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Contact
                     sales</a>
                 </div>
               </div>
               <a href="#"
-                class="-mx-3 block rounded-md px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Tin
+                class="-mx-3 block rounded-md px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Thiết
+                bị văn phòng</a>
+              <a href="#"
+                class="-mx-3 block rounded-md px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Tin
                 tức</a>
-              <a href="#"
-                class="-mx-3 block rounded-md px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Khuyến
-                mãi</a>
-              <a href="#"
-                class="-mx-3 block rounded-md px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
 
+    <header class="relative bg-white">
+      <nav aria-label="Top" class="mx-auto max-w-screen-2xl px-4 xl:px-20">
+        <div>
+          <div class="flex h-16 items-center">
+            <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
+            <button type="button"
+              class="mobile-menu-button-open relative rounded-md bg-white p-2 text-gray-400 lg:hidden">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+
+            <!-- Logo -->
+            <div class="ml-4 flex lg:ml-0">
+              <a href="#">
+                <span class="sr-only">Your Company</span>
+                <img class="h-6 w-auto lg:h-8" src="images/evosoft_blue.svg" alt="">
+              </a>
+            </div>
+
+            <!-- Flyout menus -->
+            <div class="hidden lg:ml-8 lg:block lg:self-stretch">
+              <div class="flex h-full space-x-8">
+                <div class="flex">
+                  <div class="relative flex">
+                    <!-- Item active: "border-indigo-600 text-indigo-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
+                    <!-- menu-button class for expand menu -->
+                    <button type="button"
+                      class="menu-button border-transparent text-gray-700 hover:text-[#0174c3] relative z-10 -mb-px flex items-center pt-px text-base font-medium transition-colors duration-200 ease-out"
+                      aria-expanded="false">Máy tính
+                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!--
+                  'Women' flyout menu, show/hide based on flyout menu state.
+
+                  Entering: "transition ease-out duration-200"
+                    From: "opacity-0"
+                    To: "opacity-100"
+                  Leaving: "transition ease-in duration-150"
+                    From: "opacity-100"
+                    To: "opacity-0"
+                -->
+                  <!-- menu-expand class for expand menu -->
+                  <div
+                    class="menu-expand absolute inset-x-0 top-full text-sm text-gray-500 z-10 opacity-0 transition ease-in-out duration-200">
+                    <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+                    <div class="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true"></div>
+
+                    <div class="relative bg-white">
+                      <div class="mx-auto max-w-screen-2xl xl:px-20 px-8">
+                        <div class="grid grid-cols-2 gap-x-8 gap-y-8 py-8 border-t border-gray-200">
+                          <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                            <div class="group relative text-base sm:text-sm">
+                              <div
+                                class="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                <img src="images/product-5.png"
+                                  alt="Models sitting back to back, wearing Basic Tee in black and bone."
+                                  class="object-cover object-center">
+                              </div>
+                              <a href="#" class="mt-6 block font-medium text-gray-900">
+                                <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                                New Arrivals
+                              </a>
+                              <p aria-hidden="true" class="mt-1">Shop now</p>
+                            </div>
+                            <div class="group relative text-base sm:text-sm">
+                              <div
+                                class="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                <img src="images/product-6.png"
+                                  alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees."
+                                  class="object-cover object-center">
+                              </div>
+                              <a href="#" class="mt-6 block font-medium text-gray-900">
+                                <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                                Basic Tees
+                              </a>
+                              <p aria-hidden="true" class="mt-1">Shop now</p>
+                            </div>
+                          </div>
+                          <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                            <div>
+                              <p id="Clothing-heading" class="font-medium text-gray-900">Clothing</p>
+                              <ul role="list" aria-labelledby="Clothing-heading"
+                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Tops</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Dresses</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Pants</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Denim</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Sweaters</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">T-Shirts</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Jackets</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Activewear</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Browse All</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p id="Accessories-heading" class="font-medium text-gray-900">Accessories</p>
+                              <ul role="list" aria-labelledby="Accessories-heading"
+                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Watches</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Wallets</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Bags</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Sunglasses</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Hats</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Belts</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p id="Brands-heading" class="font-medium text-gray-900">Brands</p>
+                              <ul role="list" aria-labelledby="Brands-heading"
+                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Full Nelson</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">My Way</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Re-Arranged</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Counterfeit</a>
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800">Significant Other</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="flex items-center text-base font-medium text-gray-700 hover:text-gray-800">Laptop</a>
+                <a href="#" class="flex items-center text-base font-medium text-gray-700 hover:text-gray-800">Thiết bị
+                  văn
+                  phòng</a>
+                <a href="#" class="flex items-center text-base font-medium text-gray-700 hover:text-gray-800">Tin
+                  tức</a>
+              </div>
+            </div>
+
+            <div class="ml-auto flex items-center">
+              <!-- Search -->
+              <div class="flex lg:ml-6">
+                <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">Search</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Cart -->
+              <div class="ml-4 flow-root lg:ml-6">
+                <a href="#" class="group -m-2 flex items-center p-2">
+                  <svg class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+                  <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                  <span class="sr-only">items in cart, view bag</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
 
   <div class="hero-banner">
     <div class="swiper heroSwiper">
@@ -274,7 +356,7 @@
   </div>
 
   <div class="product-slide">
-    <div class="mx-auto max-w-screen-2xl px-2 lg:px-20 mt-10">
+    <div class="mx-auto max-w-screen-2xl px-4 xl:px-20 mt-10">
       <h2 class="text-2xl font-medium mb-4">Sản phẩm bán chạy</h2>
       <div class="swiper productSwiper -m-1 p-1">
         <div class="swiper-wrapper h-auto">
@@ -405,7 +487,7 @@
   </div>
 
   <div class="product-list">
-    <div class="mx-auto max-w-screen-2xl px-2 lg:px-20 mt-10">
+    <div class="mx-auto max-w-screen-2xl px-4 xl:px-20 mt-10">
       <h2 class="text-2xl font-medium mb-4">Sản phẩm nổi bật</h2>
       <div class="grid grid-cols-2 gap-x-3 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         <a href="#" class="group">
@@ -608,7 +690,7 @@
   </div>
 
   <div class="article-slide">
-    <div class="mx-auto max-w-screen-2xl px-2 lg:px-20 mt-10">
+    <div class="mx-auto max-w-screen-2xl px-4 xl:px-20 mt-10">
       <h2 class="text-2xl font-medium mb-4">Bài viết nổi bật</h2>
       <div class="swiper articleSwiper -m-1 p-1">
         <div class="swiper-wrapper h-auto">
@@ -724,7 +806,7 @@
   </div>
 
   <div class="incentive-section">
-    <div class="mx-auto max-w-screen-2xl px-2 lg:px-20 mt-10">
+    <div class="mx-auto max-w-screen-2xl px-4 xl:px-20 mt-10">
       <dl class="grid grid-cols-2 md:grid-cols-4 gap-x-0.5 gap-y-0.5 text-center">
         <div class="bg-white px-4 py-6 rounded-sm">
           <div class="block mx-auto w-8 h-8">
@@ -771,61 +853,99 @@
   </div>
 
   <footer class="footer-section bg-white">
-    <div class="mx-auto max-w-screen-2xl pt-10 pb-4 px-2 lg:px-20 mt-10">
-      <div class="grid grid-cols-1 gap-8 mb-10 md:grid-cols-2 lg:grid-cols-3">
-        <div class="col-span-1">
-          <a href="#" class="flex items-center">
-            <img src="images/evosoft_blue.svg" class="h-8 me-3" alt="" />
-          </a>
-          <p class="py-2 text-gray-700">Making the world a better place through constructing elegant hierarchies.</p>
+    <div class="mx-auto max-w-screen-2xl px-4 xl:px-20 mt-10">
+      <div class="grid grid-cols-1 gap-2 sm:gap4 col-span-4 sm:grid-cols-2 lg:grid-cols-4 pt-10 pb-4">
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+          <div
+            class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
+            Hỗ trợ khách hàng
+            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <ul class="text-gray-700 hidden sm:block pt-2">
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Liên hệ</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Kiểm tra bảo hành</a>
+            </li>
+          </ul>
         </div>
-        <div class="grid grid-cols-1 gap-8 col-span-2 sm:grid-cols-3">
-          <div class="col-span-1">
-            <h2 class="mb-4 text-base font-semibold text-gray-900 uppercase dark:text-white">Quy định và chính sách</h2>
-            <ul class="text-gray-700">
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Chính sách bảo mật thông tin</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Chính sách đổi trả</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Chính sách vận chuyển</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Chính sách bảo hành</a>
-              </li>
-            </ul>
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+          <div
+            class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
+            Quy định và chính sách
+            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
           </div>
-          <div class="col-span-1">
-            <h2 class="mb-4 text-base font-semibold text-gray-900 uppercase dark:text-white">Thông tin công ty</h2>
-            <ul class="text-gray-700">
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Giới thiệu công ty</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Thông tin liên hệ</a>
-              </li>
-            </ul>
+          <ul class="text-gray-700 hidden sm:block pt-2">
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Chính sách bảo mật thông tin</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Chính sách đổi trả</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Chính sách vận chuyển</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Chính sách bảo hành</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+          <div
+            class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
+            Thông tin công ty
+            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
           </div>
-          <div class="col-span-1">
-            <h2 class="mb-4 text-base font-semibold text-gray-900 uppercase dark:text-white">Hỗ trợ khách hàng</h2>
-            <ul class="text-gray-700">
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Liên hệ</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="hover:text-[#0174c3]">Kiểm tra bảo hành</a>
-              </li>
-            </ul>
+          <ul class="text-gray-700 hidden sm:block pt-2">
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Giới thiệu công ty</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Thông tin liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+          <div
+            class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
+            Hỗ trợ khách hàng
+            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
           </div>
+          <ul class="text-gray-700 hidden sm:block pt-2">
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Liên hệ</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="hover:text-[#0174c3]">Kiểm tra bảo hành</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
-      <div class="sm:flex sm:items-center sm:justify-between">
+      <hr class="my-6 hidden sm:block border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
+      <div class="sm:flex sm:items-center sm:justify-between pb-4">
         <span class="text-base text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/"
             class="hover:underline">Evosoft</a>. All Rights Reserved.
         </span>
@@ -879,8 +999,9 @@
     </div>
   </footer>
 
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 

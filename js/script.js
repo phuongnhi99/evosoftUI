@@ -1,3 +1,41 @@
+$(document).ready(function() {
+    $(".menu-button").click(function() {
+        $(this).parent().parent().find(".menu-expand").toggleClass("opacity-0");
+        $(this).parent().parent().find(".menu-expand").toggleClass("opacity-100");
+        $(this).toggleClass("active");
+        $(this).toggleClass("text-gray-700");
+        $(this).toggleClass("text-[#0174c3]");
+        $(this).find("svg").toggleClass("rotate-180");
+    });
+    $(".mobile-menu-button-open").click(function() {
+        $(".mobile-menu").toggleClass("hidden");
+    });
+    $(".mobile-menu-button-close").click(function() {
+        $(".mobile-menu").toggleClass("hidden");
+    });
+    $(".mobile-menu-button").click(function() {
+        $(this).find("svg").toggleClass("rotate-180");
+        $(this).parent().find(".mobile-menu-expand").toggleClass("hidden");
+    });
+    $(".menu-footer-group").click(function () {
+        $(this).parent().find("svg").toggleClass("rotate-180");
+        $(this).parent().find("ul").toggleClass("hidden");
+    });
+    $(".sort-button").click(function () {
+        $(this).parent().find("svg").toggleClass("rotate-180");
+        $(".sort-expand").toggleClass("hidden");
+    });
+    $(".mobile-filter-button-open").click(function() {
+        $(".mobile-filter").toggleClass("hidden");
+    });
+    $(".mobile-filter-button-close").click(function() {
+        $(".mobile-filter").toggleClass("hidden");
+    });
+    $(".filter-button").click(function() {
+        $(this).find("svg").toggleClass("rotate-180");
+        $(this).parent().parent().find(".filter-expand").toggleClass("hidden");
+    });
+});
 var swiper = new Swiper(".heroSwiper", {
     slidesPerView: 1,
     loop: true,
@@ -58,18 +96,4 @@ var swiper = new Swiper(".articleSwiper", {
             spaceBetween: 12,
         },
     },
-});
-
-const primaryItemMenu = document.querySelector('#primary-item-menu');
-const expandedItemMenu = document.querySelector('#expanded-item-menu');
-const mobileMenu = document.querySelector('#mobile-menu');
-const openMobileMenu = document.querySelector('#open-mobile-menu');
-primaryItemMenu.addEventListener('click', function () {
-    expandedItemMenu.classList.toggle('hidden');
-    expandedItemMenu.classList.toggle('block');
-});
-mobileMenu.addEventListener('click', function () {
-    console.log('click');
-    openMobileMenu.classList.toggle('hidden');
-    openMobileMenu.classList.toggle('block');
 });

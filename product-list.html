@@ -11,6 +11,354 @@
 </head>
 
 <body class="bg-gray-50">
+    <div class="header-section bg-white">
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="mobile-menu hidden lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-6 w-auto" src="images/evosoft_blue.svg" alt="">
+                    </a>
+                    <button type="button" class="mobile-menu-button-close -m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <div class="-mx-3">
+                                <button type="button"
+                                    class="mobile-menu-button flex w-full items-center justify-between rounded-md py-1 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    aria-controls="disclosure-1" aria-expanded="false">
+                                    Máy tính
+                                    <!--
+                      Expand/collapse icon, toggle classes based on menu open state.
+    
+                      Open: "rotate-180", Closed: ""
+                    -->
+                                    <svg class="h-5 w-5 flex-none transition ease-in-out duration-300"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                                <div class="mobile-menu-expand down-transition mt-2 transition ease-in-out duration-200"
+                                    id="disclosure-1">
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Analytics</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Engagement</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Security</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Integrations</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Automations</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Watch
+                                        demo</a>
+                                    <a href="#"
+                                        class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Contact
+                                        sales</a>
+                                </div>
+                            </div>
+                            <div class="-mx-3">
+                                <button type="button"
+                                    class="mobile-menu-button flex w-full items-center justify-between rounded-md py-1 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    aria-controls="disclosure-1" aria-expanded="false">
+                                    Laptop
+                                    <!--
+                                                  Expand/collapse icon, toggle classes based on menu open state.
+                                
+                                                  Open: "rotate-180", Closed: ""
+                                                -->
+                                    <svg class="h-5 w-5 flex-none transition ease-in-out duration-300"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                                <div class="mobile-menu-expand down-transition mt-2 transition ease-in-out duration-200"
+                                    id="disclosure-1">
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Analytics</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Engagement</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Security</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Integrations</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Automations</a>
+                                    <a href="#"
+                                        class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Watch
+                                        demo</a>
+                                    <a href="#"
+                                        class="block rounded-md py-2 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Contact
+                                        sales</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="-mx-3 block rounded-md px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Thiết
+                                bị văn phòng</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-md px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Tin
+                                tức</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="relative bg-white">
+            <nav aria-label="Top" class="mx-auto max-w-screen-2xl px-2 xl:px-20">
+                <div>
+                    <div class="flex h-16 items-center">
+                        <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
+                        <button type="button"
+                            class="mobile-menu-button-open relative rounded-md bg-white p-2 text-gray-400 lg:hidden">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="flex">
+                            <a href="#">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-6 w-auto lg:h-8" src="images/evosoft_blue.svg" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Flyout menus -->
+                        <div class="hidden lg:ml-8 lg:block lg:self-stretch">
+                            <div class="flex h-full space-x-8">
+                                <div class="flex">
+                                    <div class="relative flex">
+                                        <!-- Item active: "border-indigo-600 text-indigo-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
+                                        <!-- menu-button class for expand menu -->
+                                        <button type="button"
+                                            class="menu-button border-transparent text-gray-700 hover:text-[#0174c3] relative z-10 -mb-px flex items-center pt-px text-base font-medium transition-colors duration-200 ease-out"
+                                            aria-expanded="false">Máy tính
+                                            <svg class="h-5 w-5 flex-none transition ease-in-out duration-300"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <!--
+                      'Women' flyout menu, show/hide based on flyout menu state.
+    
+                      Entering: "transition ease-out duration-200"
+                        From: "opacity-0"
+                        To: "opacity-100"
+                      Leaving: "transition ease-in duration-150"
+                        From: "opacity-100"
+                        To: "opacity-0"
+                    -->
+                                    <!-- menu-expand class for expand menu -->
+                                    <div
+                                        class="menu-expand absolute inset-x-0 top-full text-sm text-gray-500 z-10 opacity-0 transition ease-in-out duration-200">
+                                        <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+                                        <div class="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true"></div>
+
+                                        <div class="relative bg-white">
+                                            <div class="mx-auto max-w-screen-2xl xl:px-20 px-8">
+                                                <div
+                                                    class="grid grid-cols-2 gap-x-8 gap-y-8 py-8 border-t border-gray-200">
+                                                    <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                                                        <div class="group relative text-base sm:text-sm">
+                                                            <div
+                                                                class="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                                                <img src="images/product-5.png"
+                                                                    alt="Models sitting back to back, wearing Basic Tee in black and bone."
+                                                                    class="object-cover object-center">
+                                                            </div>
+                                                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                                                                <span class="absolute inset-0 z-10"
+                                                                    aria-hidden="true"></span>
+                                                                New Arrivals
+                                                            </a>
+                                                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                                                        </div>
+                                                        <div class="group relative text-base sm:text-sm">
+                                                            <div
+                                                                class="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                                                <img src="images/product-6.png"
+                                                                    alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees."
+                                                                    class="object-cover object-center">
+                                                            </div>
+                                                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                                                                <span class="absolute inset-0 z-10"
+                                                                    aria-hidden="true"></span>
+                                                                Basic Tees
+                                                            </a>
+                                                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                                                        <div>
+                                                            <p id="Clothing-heading" class="font-medium text-gray-900">
+                                                                Clothing</p>
+                                                            <ul role="list" aria-labelledby="Clothing-heading"
+                                                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Tops</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Dresses</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Pants</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Denim</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Sweaters</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">T-Shirts</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Jackets</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#"
+                                                                        class="hover:text-gray-800">Activewear</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Browse
+                                                                        All</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <p id="Accessories-heading"
+                                                                class="font-medium text-gray-900">
+                                                                Accessories</p>
+                                                            <ul role="list" aria-labelledby="Accessories-heading"
+                                                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Watches</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Wallets</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Bags</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#"
+                                                                        class="hover:text-gray-800">Sunglasses</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Hats</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Belts</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <p id="Brands-heading" class="font-medium text-gray-900">
+                                                                Brands
+                                                            </p>
+                                                            <ul role="list" aria-labelledby="Brands-heading"
+                                                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Full
+                                                                        Nelson</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">My Way</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#"
+                                                                        class="hover:text-gray-800">Re-Arranged</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#"
+                                                                        class="hover:text-gray-800">Counterfeit</a>
+                                                                </li>
+                                                                <li class="flex">
+                                                                    <a href="#" class="hover:text-gray-800">Significant
+                                                                        Other</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="flex items-center text-base font-medium text-gray-700 hover:text-gray-800">Laptop</a>
+                                <a href="#"
+                                    class="flex items-center text-base font-medium text-gray-700 hover:text-gray-800">Thiết
+                                    bị
+                                    văn
+                                    phòng</a>
+                                <a href="#"
+                                    class="flex items-center text-base font-medium text-gray-700 hover:text-gray-800">Tin
+                                    tức</a>
+                            </div>
+                        </div>
+
+                        <div class="ml-auto flex items-center">
+                            <!-- Search -->
+                            <div class="flex lg:ml-6">
+                                <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
+                                    <span class="sr-only">Search</span>
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- Cart -->
+                            <div class="ml-4 flow-root lg:ml-6">
+                                <a href="#" class="group -m-2 flex items-center p-2">
+                                    <svg class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
+                                    <span
+                                        class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                                    <span class="sr-only">items in cart, view bag</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
     <div class="product-list">
         <div>
             <!--
@@ -95,7 +443,7 @@
                                     </button>
                                 </h3>
                                 <!-- Filter section, show/hide based on section state. -->
-                                <div class="filter-expand pt-6 down-transition" id="filter-section-mobile-0">
+                                <div class="filter-expand pt-6 down-transition expanded" id="filter-section-mobile-0">
                                     <div class="space-y-6">
                                         <div class="flex items-center">
                                             <input id="filter-mobile-color-0" name="color[]" value="white"
@@ -265,8 +613,8 @@
                 </div>
             </div>
 
-            <main class="mx-auto max-w-screen-2xl px-6 lg:px-20 mt-10">
-                <div class="flex items-baseline justify-between border-b border-gray-200 pb-4 pt-10">
+            <main class="mx-auto max-w-screen-2xl px-2 lg:px-20 mt-10">
+                <div class="flex items-baseline justify-between border-b border-gray-200 py-4">
                     <h1 class="text-3xl font-bold tracking-tight text-gray-900">Sản phẩm</h1>
 
                     <div class="flex items-center">
@@ -336,7 +684,7 @@
                 <section aria-labelledby="products-heading" class="py-4">
                     <h2 id="products-heading" class="sr-only">Sản phẩm</h2>
 
-                    <div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-5">
+                    <div class="grid grid-cols-1 gap-2 sm:gap-3 lg:grid-cols-5">
                         <!-- Filters -->
                         <form class="hidden lg:block">
                             <h3 class="sr-only">Categories</h3>
@@ -534,7 +882,7 @@
 
                         <!-- Product grid -->
                         <div class="lg:col-span-4">
-                            <div class="grid grid-cols-2 gap-x-3 gap-y-3 md:grid-cols-3 lg:grid-cols-4">
+                            <div class="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3 lg:grid-cols-4">
                                 <a href="#" class="group">
                                     <div
                                         class="flex flex-col h-full bg-white rounded-md group-hover:transition duration-300 ease-in-out hover:scale-[1.01]">
@@ -906,6 +1254,156 @@
         </div>
     </div>
 
+    <footer class="footer-section bg-white">
+        <div class="mx-auto max-w-screen-2xl px-2 xl:px-20 mt-10">
+            <div class="grid grid-cols-1 gap-2 sm:gap4 col-span-4 sm:grid-cols-2 lg:grid-cols-4 pt-10 pb-4">
+                <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
+                    <div
+                        class="menu-footer-group sm:pointer-events-none flex justify-between items-center text-base font-semibold text-gray-900 dark:text-whit">
+                        Hỗ trợ khách hàng
+                        <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <ul class="text-gray-700 sm:block pt-2 down-transition">
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Liên hệ</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Kiểm tra bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
+                    <div
+                        class="menu-footer-group sm:pointer-events-none flex justify-between items-center text-base font-semibold text-gray-900 dark:text-white">
+                        Quy định và chính sách
+                        <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <ul class="text-gray-700 sm:block pt-2 down-transition">
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Chính sách bảo mật thông tin</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Chính sách đổi trả</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Chính sách vận chuyển</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Chính sách bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
+                    <div
+                        class="menu-footer-group sm:pointer-events-none flex justify-between items-center text-base font-semibold text-gray-900 dark:text-white">
+                        Thông tin công ty
+                        <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <ul class="text-gray-700 sm:block pt-2 down-transition">
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Giới thiệu công ty</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Thông tin liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
+                    <div
+                        class="menu-footer-group sm:pointer-events-none flex justify-between items-center text-base font-semibold text-gray-900 dark:text-white">
+                        Hỗ trợ khách hàng
+                        <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <ul class="text-gray-700 sm:block pt-2 down-transition">
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Liên hệ</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:text-[#0174c3]">Kiểm tra bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-6 hidden sm:block border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
+            <div class="sm:flex sm:items-center sm:justify-between pb-4">
+                <span class="text-base text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
+                        href="https://flowbite.com/" class="hover:underline">Evosoft</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Dribbble account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js"

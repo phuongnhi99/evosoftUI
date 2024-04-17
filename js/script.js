@@ -7,7 +7,7 @@ $(document).ready(function() {
         $(this).toggleClass("text-[#0174c3]");
         $(this).find("svg").toggleClass("rotate-180");
     });
-    $(".mobile-menu-button-open").click(function() {
+    $(".mobile-menu-button-open").click(function () {
         $(".mobile-menu").toggleClass("hidden");
     });
     $(".mobile-menu-button-close").click(function() {
@@ -15,11 +15,11 @@ $(document).ready(function() {
     });
     $(".mobile-menu-button").click(function() {
         $(this).find("svg").toggleClass("rotate-180");
-        $(this).parent().find(".mobile-menu-expand").toggleClass("hidden");
+        $(this).parent().find(".mobile-menu-expand").toggleClass("expanded");
     });
     $(".menu-footer-group").click(function () {
         $(this).parent().find("svg").toggleClass("rotate-180");
-        $(this).parent().find("ul").toggleClass("hidden");
+        $(this).parent().find("ul").toggleClass("expanded");
     });
     $(".sort-button").click(function () {
         $(this).parent().find("svg").toggleClass("rotate-180");
@@ -33,7 +33,7 @@ $(document).ready(function() {
     });
     $(".filter-button").click(function() {
         $(this).find("svg").toggleClass("rotate-180");
-        $(this).parent().parent().find(".filter-expand").toggleClass("hidden");
+        $(this).parent().parent().find(".filter-expand").toggleClass("expanded");
     });
 });
 var swiper = new Swiper(".heroSwiper", {

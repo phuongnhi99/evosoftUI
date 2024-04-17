@@ -13,7 +13,7 @@
 <body class="bg-gray-50">
   <div class="bg-white">
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="mobile-menu hidden lg:hidden" role="dialog" aria-modal="true">
+    <div class="lg:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-10"></div>
       <div
@@ -44,14 +44,16 @@
 
                   Open: "rotate-180", Closed: ""
                 -->
-                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 flex-none transition ease-in-out duration-300" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd"
                       d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                       clip-rule="evenodd" />
                   </svg>
                 </button>
                 <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                <div class="mobile-menu-expand hidden mt-2 transition ease-in-out duration-200" id="disclosure-1">
+                <div class="mobile-menu-expand down-transition mt-2 transition ease-in-out duration-200"
+                  id="disclosure-1">
                   <a href="#"
                     class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Analytics</a>
                   <a href="#"
@@ -80,14 +82,16 @@
                             
                                               Open: "rotate-180", Closed: ""
                                             -->
-                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 flex-none transition ease-in-out duration-300" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd"
                       d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                       clip-rule="evenodd" />
                   </svg>
                 </button>
                 <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                <div class="mobile-menu-expand hidden mt-2 transition ease-in-out duration-200" id="disclosure-1">
+                <div class="mobile-menu-expand down-transition mt-2 transition ease-in-out duration-200"
+                  id="disclosure-1">
                   <a href="#"
                     class="block rounded-md py-1 pl-6 pr-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">Analytics</a>
                   <a href="#"
@@ -134,7 +138,7 @@
             </button>
 
             <!-- Logo -->
-            <div class="ml-4 flex lg:ml-0">
+            <div class="flex">
               <a href="#">
                 <span class="sr-only">Your Company</span>
                 <img class="h-6 w-auto lg:h-8" src="images/evosoft_blue.svg" alt="">
@@ -151,7 +155,8 @@
                     <button type="button"
                       class="menu-button border-transparent text-gray-700 hover:text-[#0174c3] relative z-10 -mb-px flex items-center pt-px text-base font-medium transition-colors duration-200 ease-out"
                       aria-expanded="false">Máy tính
-                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <svg class="h-5 w-5 flex-none transition ease-in-out duration-300" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd"
                           d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                           clip-rule="evenodd" />
@@ -855,17 +860,18 @@
   <footer class="footer-section bg-white">
     <div class="mx-auto max-w-screen-2xl px-4 xl:px-20 mt-10">
       <div class="grid grid-cols-1 gap-2 sm:gap4 col-span-4 sm:grid-cols-2 lg:grid-cols-4 pt-10 pb-4">
-        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
           <div
-            class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
+            class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-whit">
             Hỗ trợ khách hàng
-            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+              fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                 clip-rule="evenodd" />
             </svg>
           </div>
-          <ul class="text-gray-700 hidden sm:block pt-2">
+          <ul class="text-gray-700 sm:block pt-2 down-transition">
             <li class="mb-1">
               <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
             </li>
@@ -877,17 +883,18 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
           <div
             class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
             Quy định và chính sách
-            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+              fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                 clip-rule="evenodd" />
             </svg>
           </div>
-          <ul class="text-gray-700 hidden sm:block pt-2">
+          <ul class="text-gray-700 sm:block pt-2 down-transition">
             <li class="mb-1">
               <a href="#" class="hover:text-[#0174c3]">Chính sách bảo mật thông tin</a>
             </li>
@@ -902,17 +909,18 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
           <div
             class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
             Thông tin công ty
-            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+              fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                 clip-rule="evenodd" />
             </svg>
           </div>
-          <ul class="text-gray-700 hidden sm:block pt-2">
+          <ul class="text-gray-700 sm:block pt-2 down-transition">
             <li class="mb-1">
               <a href="#" class="hover:text-[#0174c3]">Giới thiệu công ty</a>
             </li>
@@ -921,17 +929,18 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2">
+        <div class="col-span-1 border-b border-b-gray-200 sm:border-none pb-2 relative">
           <div
             class="menu-footer-group flex justify-between items-center menu-footer-group text-base font-semibold text-gray-900 dark:text-white">
             Hỗ trợ khách hàng
-            <svg class="h-5 w-5 flex-none sm:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="h-5 w-5 flex-none sm:hidden transition ease-in-out duration-300" viewBox="0 0 20 20"
+              fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                 clip-rule="evenodd" />
             </svg>
           </div>
-          <ul class="text-gray-700 hidden sm:block pt-2">
+          <ul class="text-gray-700 sm:block pt-2 down-transition">
             <li class="mb-1">
               <a href="#" class="hover:text-[#0174c3]">Mua hàng trả góp</a>
             </li>

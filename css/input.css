@@ -11,6 +11,10 @@
   --swiper-pagination-color: var(--primary-color);
 }
 
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
 /* Swiper */
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after,
@@ -27,4 +31,24 @@
   height: 2rem;
   background-color: var(--gray-color);
   border-radius: 50%;
+}
+
+.down-transition {
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-10px);
+  visibility: hidden;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+
+.down-transition.expanded {
+  position: static;
+  transform: none;
+  transition: transform 0.5s ease;
+  visibility: visible;
+  z-index: 1;
 }
